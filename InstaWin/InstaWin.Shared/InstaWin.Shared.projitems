@@ -17,16 +17,6 @@
     <Content Include="$(MSBuildThisFileDirectory)css\wrapper-styles.css" />
     <Content Include="$(MSBuildThisFileDirectory)error-example.html" />
     <Content Include="$(MSBuildThisFileDirectory)injection-script.js" />
-    <None Include="$(MSBuildThisFileDirectory)readme\bootstrap.min.css" />
-    <None Include="$(MSBuildThisFileDirectory)readme\custom.css" />
-    <None Include="$(MSBuildThisFileDirectory)readme\docs.css" />
-    <None Include="$(MSBuildThisFileDirectory)readme\logo-wat.png" />
-    <None Include="$(MSBuildThisFileDirectory)readme\config-json-default-values.png" />
-    <None Include="$(MSBuildThisFileDirectory)readme\config-json-override-default-values.png" />
-    <None Include="$(MSBuildThisFileDirectory)readme\intellisense-support-enums.png" />
-    <None Include="$(MSBuildThisFileDirectory)readme\intellisense-support-properties.png" />
-    <None Include="$(MSBuildThisFileDirectory)readme\minimalist-default-config-json-file.png" />
-    <None Include="$(MSBuildThisFileDirectory)readme\sample-config-json-files.png" />
     <Content Include="$(MSBuildThisFileDirectory)schema\schema-manifest.json" />
     <Content Include="$(MSBuildThisFileDirectory)template\css\base.css" />
     <Content Include="$(MSBuildThisFileDirectory)template\css\error.css" />
