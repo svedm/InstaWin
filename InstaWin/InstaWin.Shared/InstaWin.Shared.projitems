@@ -16,12 +16,11 @@
     <Content Include="$(MSBuildThisFileDirectory)css\injected-styles.css" />
     <Content Include="$(MSBuildThisFileDirectory)css\wrapper-styles.css" />
     <Content Include="$(MSBuildThisFileDirectory)error-example.html" />
-    <Content Include="$(MSBuildThisFileDirectory)injection-script-example.js" />
+    <Content Include="$(MSBuildThisFileDirectory)injection-script.js" />
     <None Include="$(MSBuildThisFileDirectory)readme\bootstrap.min.css" />
     <None Include="$(MSBuildThisFileDirectory)readme\custom.css" />
     <None Include="$(MSBuildThisFileDirectory)readme\docs.css" />
     <None Include="$(MSBuildThisFileDirectory)readme\logo-wat.png" />
-    <None Include="$(MSBuildThisFileDirectory)readme.html" />
     <None Include="$(MSBuildThisFileDirectory)readme\config-json-default-values.png" />
     <None Include="$(MSBuildThisFileDirectory)readme\config-json-override-default-values.png" />
     <None Include="$(MSBuildThisFileDirectory)readme\intellisense-support-enums.png" />
