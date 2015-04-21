@@ -5,12 +5,30 @@
     "wat_customScript": {
         "scriptFiles._comment": "An array of custom script files stored within the app package that are injected into the DOM",
         "scriptFiles": [
-            "injection-scriptjs"
+            "injection-script.js"
         ]
     },
 
-    "wat_styles": {
-        "customCssFile._comment": "This enables you to embed CSS styles which get inserted over the existing styles on your website. This is great for adjusting the style of the site when it is presented as an application. This can be used as an alterntive to the injected-styles.css.",
-        "customCssFile": "/css/injected-styles.css"
+	"wat_styles": {
+		"customCssFile._comment": "This enables you to embed CSS styles which get inserted over the existing styles on your website. This is great for adjusting the style of the site when it is presented as an application. This can be used as an alterntive to the injected-styles.css.",
+		"customCssFile": "css/injected-styles.css"
+	},
+
+	 "wat_appBar": {
+        "enabled": true,
+        "makeSticky": false,
+        "buttons": [
+            {
+                "label": "Settings",
+                "icon": "edit",
+                "action": "settings"
+            },
+            {
+                "label": "Manage profile",
+                "icon": "contactinfo",
+                "action": "https://instagram.com/accounts/edit/",
+                "section": "selection"
+            }
+        ]
     }
 }
