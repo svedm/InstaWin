@@ -1,0 +1,46 @@
+(function () {
+	if (navigator.geolocation) {
+	    return;
+	}
+
+	var waitingOnSuccess = [];
+	var waitingOnError = [];
+
+	// Receptor: function to handle response from host
+    //window.getGeoCallbacks = function (responseString) {
+    //    var response = JSON.parse(responseString);
+
+	//	if (response.error) {
+	//	    for (var index = 0; index < waitingOnError.length; index++) {
+	//	        waitingOnError[index]();
+	//	    }
+	//	} else {
+	//		for (var index = 0; index < waitingOnSuccess.length; index++) {
+	//			waitingOnSuccess[index](response.position);
+	//		}
+	//	}
+
+    //    waitingOnSuccess = [];
+    //    waitingOnError = [];
+    //};
+
+	navigator.geolocation = {}; 
+	navigator.geolocation.getCurrentPosition = function (success, error, options) {
+	    var geoobj = {};
+	    geoobj.coords = {};
+
+	    geoobj.coords.latitude = ###LOCLAT###
+	    geoobj.coords.longitude = ###LOCLONG###;
+
+	    setTimeout(success, 0, geoobj);
+		//var order = {
+		//	type: "GEO",
+		//	options: options
+		//};
+
+		//waitingOnSuccess.push(success);
+		//waitingOnError.push(error);
+
+		//window.external.notify(JSON.stringify(order));
+	}
+})();

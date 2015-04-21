@@ -1,0 +1,87 @@
+﻿/*!
+  © Microsoft. All rights reserved.
+
+  This library is supported for use in Windows Store apps only.
+*/
+
+
+/* Template options*/
+body {
+    color: rgba(255,255,255, 0.8);    
+}
+
+/* Adjusts the position of the back button. Adjust this setting if the back button overlaps your content*/
+#backbutton-wrapper {
+    margin-left: -0px;
+}
+
+/* Edit these colors to change the AppBar and NavBar backgrounds */
+.win-appbar {
+    background-color: #5E7857;
+    border-color: #5E7857; 
+}
+
+.navbar-submenu {
+    background-color: #4A5E45;
+    border-color: #4A5E45;  
+}
+
+/* NavBarCommand colors. */
+.win-navbarcommand-button,
+.win-navbarcommand-splitbutton {
+    background-color: rgba(255,255,255,0.11);
+    color: inherit;
+}
+
+
+.win-navbarcommand-button:hover,
+.win-navbarcommand-splitbutton:hover,
+.win-navbarcommand-splitbutton-opened {
+    background-color: rgba(199,199,199,0.31);
+}
+ 
+/* NavBar page indicator colors. */
+.win-navbarcontainer-pageindicator {
+    background-color: rgba(255,255,255,0.3);
+}
+.win-navbarcontainer-pageindicator:hover , .win-navbarcontainer-pageindicator-current {
+    background-color: rgba(255,255,255,0.7);
+}
+
+.win-navbarcontainer-navarrow {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.win-navbarcontainer-navarrow:hover {
+     background-color: rgba(255,255,255,0.8);
+}
+
+/* Color for the BackButton controls */
+.win-ui-dark .win-navigation-backbutton, .win-ui-dark .win-navigation-backbutton:active, 
+.win-ui-dark .win-navigation-backbutton:hover, .win-ui-dark .win-navigation-backbutton:active:hover
+{
+    background-color: transparent;
+}
+
+.win-backbutton {
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+}
+
+.win-backbutton:hover {
+    background-color: rgb(255,255,255, 0.2);
+    opacity: 1;
+    
+}
+
+/* Command ring colors. */
+.win-commandring {
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+}
+
+button:hover .win-commandring, button[aria-checked=true].win-commandring {
+    background-color: rgba(255, 255, 255, 0.2);
+}

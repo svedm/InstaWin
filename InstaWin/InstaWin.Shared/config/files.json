@@ -1,0 +1,5 @@
+{
+    "configJsonUri": "http://localhost:2659/config2.js",
+    "wrapperStylesCssUri": "http://hostedwat.azurewebsites.net/wrapper-styles4dev.css",
+    "injectedStylesCssUri": "http://hostedwat.azurewebsites.net/injected-styles4dev.css"
+}

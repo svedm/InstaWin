@@ -1,0 +1,160 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <script>
+        /*
+     Copyright (c) Microsoft Corporation
+
+     All rights reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.  You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+     THIS CODE IS PROVIDED *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABLITY OR NON-INFRINGEMENT.
+
+     See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.
+
+
+     */
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>site2App</title>
+
+    <!-- WinJS references -->
+    <!-- WinJS references -->
+    <!-- At runtime, ui-themed.css resolves to ui-themed.light.css or ui-themed.dark.css
+    based on the user’s theme setting. This is part of the MRT resource loading functionality. -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <link data-href="THEME-PLACEHOLDER" rel="stylesheet" />
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+    <!-- App Specific references -->
+    <script src="/js/default.js"></script>
+
+    <!-- Web App Template references -->
+
+    <link href="/template/css/base.css" rel="stylesheet" />
+    <link href="/css/wrapper-styles.css" rel="stylesheet" />
+
+    <script src="/template/js/wat.js"></script>
+    <script src="/template/js/log.js"></script>
+    <script src="/template/js/config.js"></script>
+    <script src="/template/js/utilities.js"></script>
+    <script src="/template/js/environment.js"></script>
+    <script src="/template/js/styles.js"></script>
+    <script src="/template/js/nav.js"></script>
+    <script src="/template/js/share.js"></script>
+    <script src="/template/js/orientation.js"></script>
+    <script src="js/NotificationHub.js"></script>
+    <script src="/template/js/notify.js"></script>
+    <script src="/template/js/tiles.js"></script>
+    <script src="/template/js/settings.js"></script>
+    <script src="/template/js/header.js"></script>
+    <script src="/template/js/search.js"></script>
+    <script src="js/idb/localIDBInterceptor.js"></script>
+    <script src="/template/js/offline.js"></script>
+    <script src="/template/js/customscript.js"></script>
+
+    <script>
+        // Add initialization event handlers
+        WinJS.Application.addEventListener("activated", WAT.activationHandler, false);
+        window.addEventListener("DOMContentLoaded", function () {
+            WAT.init({
+                configFile: "config/config.json",
+                stage: document.getElementById("stage"),
+                webView: document.getElementById("main-view"),
+                offlineView: document.getElementById("offline-view"),
+                dialogView: document.getElementById("dialog-view"),
+                closeButton: document.getElementById("close"),
+                loadingWrapper: document.getElementById("loading-wrapper"),
+                // You can disable the extended splash screen by commenting out the line below...
+                extendedSplashScreen: document.getElementById("extendedSplashScreen"),
+                appBar: document.getElementById("appBar"),
+                navBar: document.getElementById("navBar"),
+                navDrawer: document.getElementById("navDrawer"),
+                header: document.getElementById("header"),
+                backButton: document.getElementById("back"),
+                logo: document.getElementById("logo"),
+                title: document.getElementById("title"),
+                searchBox: document.getElementById("search-box"),
+                flyoutHost: document.querySelector(".flyout-host"),
+                offlineMessage: document.getElementById("offlineMessage")
+            });
+
+            var offlineMessageHide = document.getElementById("offlineMessageHide");
+            var offlineMessageHideHandler = function () { document.getElementById("offlineMessage").style.display = 'none'; };
+            offlineMessageHide.addEventListener("click", offlineMessageHideHandler);
+
+            WinJS.Resources.processAll();
+        }, false);
+    </script>
+</head>
+<body>
+    <div class="viewport" id="viewport">
+        <div class="surface" id="surface">
+            <div class="navDrawer" id="navDrawer">
+                <input type="search" name="search-box" id="search-box" class="search-box" />
+                <div id="navDrawerIconTextTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+                    <div class="navDrawerIconTextItem" id="navDrawerIconTextItem">
+                        <img src="#" class="navDrawerIconTextItem-Image" data-win-bind="src: icon" />
+                        <div class="navDrawerIconTextItem-Detail">
+                            <h4 data-win-bind="innerText: label"></h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="navDrawerListView"
+                     class="win-selectionstylefilled"
+                     data-win-control="WinJS.UI.ListView"
+                     data-win-options="{ itemDataSource: navDrawerList.dataSource,
+                        itemTemplate: navDrawerIconTextTemplate,
+                        selectionMode: 'none',
+                        tapBehavior: 'invoke',
+                        layout: { type: WinJS.UI.ListLayout }
+                }"></div>
+            </div>
+            <div class="content">
+                <div id="header" class="header">
+                    <div class="hamburger" id="hamburger"></div>
+                    <div id="backbutton-wrapper" style="display: none">
+                        <button id="back" class="win-backbutton">Back</button>
+                    </div>
+                    <div class="logoarea">
+                        <img id="logo" />
+                    </div>
+                    <h1 id="title" class="titlearea win-type-ellipsis"></h1>
+                </div>
+                <div class="stage" id="stage">
+                    <div id="offlineMessage" style="display: none;" class="offlineMessageContainer">
+                        <span class="offlineMessage">
+                            <b id="offlineMessageHide" class="offlineMessageHide">X</b>
+                            <span class="offlineMessageContent">The application is offline. Some features might not work until the app is back online.</span>
+                        </span>
+                    </div>
+                    <x-ms-webview id="main-view"></x-ms-webview>
+                    <x-ms-webview id="offline-view"></x-ms-webview>
+                    <div class="webview-overlay">
+                        
+                    </div>
+                    <div class="transparent-overlay"></div>
+                    <div id="loading-wrapper" class="loading-wrapper">
+                        <progress id="page-load-progress" class="loading-progress win-ring win-large"></progress>
+                    </div>
+                    <div class="flyout-host"></div>
+                    <div>
+                        <div id="navBar"></div>
+                    </div>
+                    <div data-win-control="WinJS.UI.AppBar" id="appBar"></div>
+                    <div id="modal-stage" class="stage overlay-stage">
+                        <x-ms-webview id="dialog-view" class="modal-content"></x-ms-webview>
+                        <button id="close" class="win-closebutton">X</button>
+                    </div>
+                </div>
+                <div id="extendedSplashScreen" class="extendedSplashScreen">
+                    <img class="extendedSplashImage" src="/images/splashscreen.png" alt="Launching..." />
+                    <progress class="loading-progress"></progress>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

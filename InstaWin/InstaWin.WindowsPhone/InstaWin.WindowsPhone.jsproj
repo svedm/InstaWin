@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>4cb96626-a99e-45b6-8c84-ce94c694cd52</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0'">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <PropertyGroup Label="Configuration">
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <RequiredPlatformVersion>8.1</RequiredPlatformVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="default.html" />
+    <Content Include="images\enums\accept.png" />
+    <Content Include="images\enums\accounts.png" />
+    <Content Include="images\enums\add.png" />
+    <Content Include="images\enums\addfriend.png" />
+    <Content Include="images\enums\admin.png" />
+    <Content Include="images\enums\aligncenter.png" />
+    <Content Include="images\enums\alignleft.png" />
+    <Content Include="images\enums\alignright.png" />
+    <Content Include="images\enums\allapps.png" />
+    <Content Include="images\enums\attach.png" />
+    <Content Include="images\enums\attachcamera.png" />
+    <Content Include="images\enums\audio.png" />
+    <Content Include="images\enums\back.png" />
+    <Content Include="images\enums\backtowindow.png" />
+    <Content Include="images\enums\blockcontact.png" />
+    <Content Include="images\enums\bold.png" />
+    <Content Include="images\enums\bookmarks.png" />
+    <Content Include="images\enums\browsephotos.png" />
+    <Content Include="images\enums\bullets.png" />
+    <Content Include="images\enums\calculator.png" />
+    <Content Include="images\enums\calendar.png" />
+    <Content Include="images\enums\calendarday.png" />
+    <Content Include="images\enums\calendarreply.png" />
+    <Content Include="images\enums\calendarweek.png" />
+    <Content Include="images\enums\camera.png" />
+    <Content Include="images\enums\cancel.png" />
+    <Content Include="images\enums\caption.png" />
+    <Content Include="images\enums\cc.png" />
+    <Content Include="images\enums\cellphone.png" />
+    <Content Include="images\enums\characters.png" />
+    <Content Include="images\enums\clear.png" />
+    <Content Include="images\enums\clearselection.png" />
+    <Content Include="images\enums\clock.png" />
+    <Content Include="images\enums\closepane.png" />
+    <Content Include="images\enums\comment.png" />
+    <Content Include="images\enums\contact.png" />
+    <Content Include="images\enums\contact2.png" />
+    <Content Include="images\enums\contactinfo.png" />
+    <Content Include="images\enums\contactpresence.png" />
+    <Content Include="images\enums\copy.png" />
+    <Content Include="images\enums\crop.png" />
+    <Content Include="images\enums\cut.png" />
+    <Content Include="images\enums\delete.png" />
+    <Content Include="images\enums\directions.png" />
+    <Content Include="images\enums\disableupdates.png" />
+    <Content Include="images\enums\disconnectdrive.png" />
+    <Content Include="images\enums\dislike.png" />
+    <Content Include="images\enums\dockbottom.png" />
+    <Content Include="images\enums\dockleft.png" />
+    <Content Include="images\enums\dockright.png" />
+    <Content Include="images\enums\document.png" />
+    <Content Include="images\enums\download.png" />
+    <Content Include="images\enums\edit.png" />
+    <Content Include="images\enums\emoji.png" />
+    <Content Include="images\enums\emoji2.png" />
+    <Content Include="images\enums\favorite.png" />
+    <Content Include="images\enums\filter.png" />
+    <Content Include="images\enums\find.png" />
+    <Content Include="images\enums\flag.png" />
+    <Content Include="images\enums\folder.png" />
+    <Content Include="images\enums\font.png" />
+    <Content Include="images\enums\fontcolor.png" />
+    <Content Include="images\enums\fontdecrease.png" />
+    <Content Include="images\enums\fontincrease.png" />
+    <Content Include="images\enums\fontsize.png" />
+    <Content Include="images\enums\forward.png" />
+    <Content Include="images\enums\fourbars.png" />
+    <Content Include="images\enums\fullscreen.png" />
+    <Content Include="images\enums\globe.png" />
+    <Content Include="images\enums\go.png" />
+    <Content Include="images\enums\gotostart.png" />
+    <Content Include="images\enums\gototoday.png" />
+    <Content Include="images\enums\hangup.png" />
+    <Content Include="images\enums\help.png" />
+    <Content Include="images\enums\hidebcc.png" />
+    <Content Include="images\enums\highlight.png" />
+    <Content Include="images\enums\home.png" />
+    <Content Include="images\enums\import.png" />
+    <Content Include="images\enums\importall.png" />
+    <Content Include="images\enums\important.png" />
+    <Content Include="images\enums\italic.png" />
+    <Content Include="images\enums\keyboard.png" />
+    <Content Include="images\enums\leavechat.png" />
+    <Content Include="images\enums\left.png" />
+    <Content Include="images\enums\library.png" />
+    <Content Include="images\enums\like.png" />
+    <Content Include="images\enums\likedislike.png" />
+    <Content Include="images\enums\link.png" />
+    <Content Include="images\enums\list.png" />
+    <Content Include="images\enums\mail.png" />
+    <Content Include="images\enums\mail2.png" />
+    <Content Include="images\enums\mailforward.png" />
+    <Content Include="images\enums\mailreply.png" />
+    <Content Include="images\enums\mailreplyall.png" />
+    <Content Include="images\enums\map.png" />
+    <Content Include="images\enums\mapdrive.png" />
+    <Content Include="images\enums\mappin.png" />
+    <Content Include="images\enums\memo.png" />
+    <Content Include="images\enums\message.png" />
+    <Content Include="images\enums\microphone.png" />
+    <Content Include="images\enums\more.png" />
+    <Content Include="images\enums\movetofolder.png" />
+    <Content Include="images\enums\musicinfo.png" />
+    <Content Include="images\enums\mute.png" />
+    <Content Include="images\enums\newfolder.png" />
+    <Content Include="images\enums\newwindow.png" />
+    <Content Include="images\enums\next.png" />
+    <Content Include="images\enums\onebar.png" />
+    <Content Include="images\enums\openfile.png" />
+    <Content Include="images\enums\openlocal.png" />
+    <Content Include="images\enums\openpane.png" />
+    <Content Include="images\enums\openwith.png" />
+    <Content Include="images\enums\orientation.png" />
+    <Content Include="images\enums\otheruser.png" />
+    <Content Include="images\enums\outlinestar.png" />
+    <Content Include="images\enums\page.png" />
+    <Content Include="images\enums\page2.png" />
+    <Content Include="images\enums\paste.png" />
+    <Content Include="images\enums\pause.png" />
+    <Content Include="images\enums\people.png" />
+    <Content Include="images\enums\permissions.png" />
+    <Content Include="images\enums\phone.png" />
+    <Content Include="images\enums\phonebook.png" />
+    <Content Include="images\enums\pictures.png" />
+    <Content Include="images\enums\pin.png" />
+    <Content Include="images\enums\placeholder.png" />
+    <Content Include="images\enums\play.png" />
+    <Content Include="images\enums\postupdate.png" />
+    <Content Include="images\enums\preview.png" />
+    <Content Include="images\enums\previewlink.png" />
+    <Content Include="images\enums\previous.png" />
+    <Content Include="images\enums\priority.png" />
+    <Content Include="images\enums\protecteddocument.png" />
+    <Content Include="images\enums\read.png" />
+    <Content Include="images\enums\redo.png" />
+    <Content Include="images\enums\refresh.png" />
+    <Content Include="images\enums\remote.png" />
+    <Content Include="images\enums\remove.png" />
+    <Content Include="images\enums\rename.png" />
+    <Content Include="images\enums\repair.png" />
+    <Content Include="images\enums\repeatall.png" />
+    <Content Include="images\enums\repeatone.png" />
+    <Content Include="images\enums\reporthacked.png" />
+    <Content Include="images\enums\reshare.png" />
+    <Content Include="images\enums\right.png" />
+    <Content Include="images\enums\rotate.png" />
+    <Content Include="images\enums\rotatecamera.png" />
+    <Content Include="images\enums\save.png" />
+    <Content Include="images\enums\savelocal.png" />
+    <Content Include="images\enums\scan.png" />
+    <Content Include="images\enums\selectall.png" />
+    <Content Include="images\enums\send.png" />
+    <Content Include="images\enums\setlockscreen.png" />
+    <Content Include="images\enums\settile.png" />
+    <Content Include="images\enums\settings.png" />
+    <Content Include="images\enums\shop.png" />
+    <Content Include="images\enums\showbcc.png" />
+    <Content Include="images\enums\showresults.png" />
+    <Content Include="images\enums\shuffle.png" />
+    <Content Include="images\enums\slideshow.png" />
+    <Content Include="images\enums\solidstar.png" />
+    <Content Include="images\enums\sort.png" />
+    <Content Include="images\enums\stop.png" />
+    <Content Include="images\enums\stopslideshow.png" />
+    <Content Include="images\enums\street.png" />
+    <Content Include="images\enums\switch.png" />
+    <Content Include="images\enums\switchapps.png" />
+    <Content Include="images\enums\sync.png" />
+    <Content Include="images\enums\syncfolder.png" />
+    <Content Include="images\enums\tag.png" />
+    <Content Include="images\enums\target.png" />
+    <Content Include="images\enums\threebars.png" />
+    <Content Include="images\enums\touchpointer.png" />
+    <Content Include="images\enums\trim.png" />
+    <Content Include="images\enums\twobars.png" />
+    <Content Include="images\enums\twopage.png" />
+    <Content Include="images\enums\underline.png" />
+    <Content Include="images\enums\undo.png" />
+    <Content Include="images\enums\unfavorite.png" />
+    <Content Include="images\enums\unpin.png" />
+    <Content Include="images\enums\unsyncfolder.png" />
+    <Content Include="images\enums\up.png" />
+    <Content Include="images\enums\upload.png" />
+    <Content Include="images\enums\uploadskydrive.png" />
+    <Content Include="images\enums\video.png" />
+    <Content Include="images\enums\videochat.png" />
+    <Content Include="images\enums\view.png" />
+    <Content Include="images\enums\viewall.png" />
+    <Content Include="images\enums\volume.png" />
+    <Content Include="images\enums\webcam.png" />
+    <Content Include="images\enums\world.png" />
+    <Content Include="images\enums\zerobars.png" />
+    <Content Include="images\enums\zoom.png" />
+    <Content Include="images\enums\zoomin.png" />
+    <Content Include="images\enums\zoomout.png" />
+    <Content Include="images\ham.svg" />
+    <Content Include="images\share.contrast-black.png" />
+    <Content Include="images\share.contrast-white.png" />
+    <Content Include="images\share.png" />
+    <Content Include="images\SplashScreen.scale-100.png" />
+    <Content Include="images\SplashScreen.scale-140.png" />
+    <Content Include="images\SplashScreenRotated.scale-100.png" />
+    <Content Include="images\SplashScreenRotated.scale-140.png" />
+    <Content Include="images\SplashScreenRotated.scale-240.png" />
+    <Content Include="images\Square150x150Logo.scale-240.png" />
+    <Content Include="images\Square44x44Logo.scale-240.png" />
+    <Content Include="images\Wide310x150Logo.scale-240.png" />
+    <Content Include="images\Square71x71Logo.scale-240.png" />
+    <Content Include="images\SplashScreen.scale-240.png" />
+    <Content Include="images\StoreLogo.scale-240.png" />
+    <Content Include="js\default.js" />
+    <Content Include="css\default.css" />
+    <Content Include="css\ui-themed.css" />
+    <Content Include="css\ui-themed.theme-dark.css" />
+    <Content Include="css\ui-themed.theme-light.css" />
+    <Content Include="packages.config" />
+    <Content Include="template\js\environment.js" />
+    <Content Include="template\settings.html" />
+    <Content Include="template\wat-wrapper.html" />
+    <Content Include="vcd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.Phone.WinJS.2.1, Version=1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WatExtensions\WatExtensions.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AppPromo">
+      <HintPath>$(SolutionDir)packages\AppPromo.1.0.0.9\lib\wpa81\AppPromo.winmd</HintPath>
+      <IsWinMDFile>true</IsWinMDFile>
+      <CopyLocal>True</CopyLocal>
+    </Reference>
+  </ItemGroup>
+  <Import Project="..\InstaWin.Shared\InstaWin.Shared.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>

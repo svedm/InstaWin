@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)config\config.es.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)config\config.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)config\config.sample.json" />
+    <Content Include="$(MSBuildThisFileDirectory)config\files.json" />
+    <Content Include="$(MSBuildThisFileDirectory)css\injected-styles.css" />
+    <Content Include="$(MSBuildThisFileDirectory)css\wrapper-styles.css" />
+    <Content Include="$(MSBuildThisFileDirectory)error-example.html" />
+    <Content Include="$(MSBuildThisFileDirectory)injection-script-example.js" />
+    <None Include="$(MSBuildThisFileDirectory)readme\bootstrap.min.css" />
+    <None Include="$(MSBuildThisFileDirectory)readme\custom.css" />
+    <None Include="$(MSBuildThisFileDirectory)readme\docs.css" />
+    <None Include="$(MSBuildThisFileDirectory)readme\logo-wat.png" />
+    <None Include="$(MSBuildThisFileDirectory)readme.html" />
+    <None Include="$(MSBuildThisFileDirectory)readme\config-json-default-values.png" />
+    <None Include="$(MSBuildThisFileDirectory)readme\config-json-override-default-values.png" />
+    <None Include="$(MSBuildThisFileDirectory)readme\intellisense-support-enums.png" />
+    <None Include="$(MSBuildThisFileDirectory)readme\intellisense-support-properties.png" />
+    <None Include="$(MSBuildThisFileDirectory)readme\minimalist-default-config-json-file.png" />
+    <None Include="$(MSBuildThisFileDirectory)readme\sample-config-json-files.png" />
+    <Content Include="$(MSBuildThisFileDirectory)schema\schema-manifest.json" />
+    <Content Include="$(MSBuildThisFileDirectory)template\css\base.css" />
+    <Content Include="$(MSBuildThisFileDirectory)template\css\error.css" />
+    <Content Include="$(MSBuildThisFileDirectory)template\css\ui-blue-dark.css" />
+    <Content Include="$(MSBuildThisFileDirectory)template\css\ui-blue-light.css" />
+    <Content Include="$(MSBuildThisFileDirectory)template\css\ui-dark.css" />
+    <Content Include="$(MSBuildThisFileDirectory)template\css\ui-green-dark.css" />
+    <Content Include="$(MSBuildThisFileDirectory)template\css\ui-green-light.css" />
+    <Content Include="$(MSBuildThisFileDirectory)template\css\ui-light.css" />
+    <Content Include="$(MSBuildThisFileDirectory)template\error.es.html" />
+    <Content Include="$(MSBuildThisFileDirectory)template\error.html" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\config.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\orientation.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\offline.es.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)template\roller-settings.html" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\customscript.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\geoLocation.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\geo\geoLocationInterceptor.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\geo\injectedGeoLocation.script" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\header.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\idb\injectedIDB.script" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\idb\localIDBInterceptor.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\log.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\nav.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\NotificationHub.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\roller-settings.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\notify-settings.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\notify.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\offline.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\utilities.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\wat.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\search.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\settings.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\share.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\styles.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\js\tiles.js" />
+    <Content Include="$(MSBuildThisFileDirectory)template\notify-settings.html" />
+    <Content Include="$(MSBuildThisFileDirectory)template\offline.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)template\partials\page-loading.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="$(MSBuildThisFileDirectory)strings\en-US\resources.resjson" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)strings\es\resources.resjson" />
+  </ItemGroup>
+</Project>

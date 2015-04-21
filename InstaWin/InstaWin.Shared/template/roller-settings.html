@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hosted Config</title>
+    <script src="js/roller-settings.js"></script>
+</head>
+<body>
+    <div class="win-settingsflyout" data-win-control="WinJS.UI.SettingsFlyout" aria-label="roller" data-win-options="{settingsCommandId:'roller', width: 'narrow'}">
+        <div class="win-header">
+            <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+            <div class="win-label" data-win-res="{textContent: 'rollerSettingsTitle'}"></div>
+            <img class="flyout-logo" />
+        </div>
+        <div class="win-content">
+            <div class="win-settings-section">
+                <div class="win-type-medium" data-win-res="{textContent: 'hostUrlLabel'}"></div>
+                <div>
+                    <input id="hostURL" type="text" />
+                </div>
+                <div><button id="navbutton" class="settings-command" data-win-res="{textContent: 'updateHostUrlButton'}"></button></div>
+                <div><button id="refreshbutton" class="settings-command" data-win-res="{textContent: 'refreshConfigButton'}"></button></div>
+                <div><button id="clearbutton" class="settings-command" data-win-res="{textContent: 'clearConfigButton'}"></button></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
